@@ -4,7 +4,7 @@ import Data.List (sort, find, intercalate)
 import Data.Char (toLower)
 
 -- Data type representing a multiset
-data MSet a = MS [(a, Int)]
+newtype MSet a = MS [(a, Int)]
   deriving (Show)
 
 -- Normalize a string to its "ciao" form (sorted lowercase)
